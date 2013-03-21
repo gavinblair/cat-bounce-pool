@@ -292,7 +292,8 @@ var graphics = element.getContext("2d");
         */
  var img = new Image;
 img.onload = function(){ graphics.drawImage(img, 0,0, xsize, ysize); };
-img.src = "http://gavinblair.github.com/cat-bounce-pool/img/cat.svg";
+var randomnumber=Math.floor(Math.random()*4)+1;
+img.src = "http://gavinblair.github.com/cat-bounce-pool/img/"+randomnumber+".png";
 
 	}
 
